@@ -41,3 +41,15 @@ mijloc=len(text_1)//2
 text_1_prima_parte= text_1[0:mijloc:1]
 text_1_doua_parte= text_1[mijloc:1]
 print(text_1_prima_parte)
+x=3
+y=3
+z=x**y
+print(z)
+print(3**2)
+print(7>>1)
+print(~5)
+print(4& 7)
+print(2**3**2)
+print((2**3)**2)
+print( 5 * (2 // 4))
+print(x % y // x) and x,y>0
