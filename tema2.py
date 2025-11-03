@@ -36,13 +36,13 @@ for i in range(len(note)):
     if note[i] >=5:
         print(f"{elevi[i]} este promovat")
 #PARTEA B
-#cerinta B1
+#cerinta B5
 print("--------")
 #nota_noua= note[i] + 1
 for i in range(len(note)):
     print(f" Nota noua pentru {elevi[i]} devine {note[i]+1}")
 print("------")
-#cerinta B2
+#cerinta B6
 elevi = ["Ana", "Bogdan", "Carmen", "Darius", "Elena"]
 note  = [9,       7,        10,       4,        8]
 
@@ -52,7 +52,7 @@ elevi.append(elev_nou)
 print(elevi)
 note.append(nota_elev_nou)
 print(note)
-#Cerinta B3
+#Cerinta B7
 print("--------")
 elev_de_sters   = "Darius"
 pozitia= elevi.index(elev_de_sters)
@@ -60,13 +60,13 @@ elevi.pop(pozitia)
 note.pop(pozitia)
 print(elevi)
 print(note)
-#Cerinta B4
+#Cerinta B8
 print("--------")
 for i in range(len(elevi)):
     print(f"{elevi[i]} are nota {note[i]}")
 print("--------")
 #PARTEA C
-#Cerinta C1
+#Cerinta C9
 interogari_nume = ["Ana", "Mara", "Elena", "stop"]
 i=0
 while interogari_nume[i] != "stop":
@@ -77,7 +77,34 @@ while interogari_nume[i] != "stop":
     else:
         print(f"{nume} nu exista in lista de interogari nume")
     i += 1
-
+#Cerinta C10
+print("-----------")
+note  = [9,       7,        10,       4,        8]
+promovati=0
+respinsi=0
+for n in note:
+    if n >=5:
+        promovati+=1
+    else:
+        respinsi+=1
+print(f"Numar de promovati: {promovati}")
+print(f"Numar de respinsi: {respinsi}")
+#Cerinta C11
+elevi = ["Ana", "Bogdan", "Carmen", "Darius", "Elena"]
+note  = [9,       7,        10,       4,        8]
+note_promovati=[]
+for n in note:
+    if n >= 5:
+        note_promovati.append(n)
+print("Notele elevilor promovati sunt:" , note_promovati)
+if len(note_promovati)>0:
+    suma=0
+    for n in note_promovati:
+        suma+=n
+    media= suma/len(note_promovati)
+    print(f"Media promovati: {media:.2f}")
+else:
+    print("Nu exista promovati")
 
 
 
