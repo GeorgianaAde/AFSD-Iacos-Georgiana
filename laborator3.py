@@ -18,8 +18,8 @@ print(lista_1 + lista_2)
 #len
 print(len(lista_1))
 #max returneaza maximul din lista
-print(max(Lista_1))
-print(min(Lista_1))
+print(max(lista_1))
+print(min(lista_1))
 #adaugam elemente in lista avem 2 metode
 #met 1 append-adauga elementul la finalul listei
 lista=[1,2,3]
@@ -38,9 +38,9 @@ print("-------------------")
 #sortare lista
 #sort
 lista=[1,2,4,6,3,5]
-prnt(lista)
 print(lista)
-lista.sort(reverse:True)
+print(lista)
+#lista.sort(reverse:True)
 print(lista)
 #sorted(lista)
 #returneaza o lista noua sortata
@@ -66,8 +66,8 @@ for element in lista:
 #pozitia elementului la care suntem:index
 #valoarea elementului: lista[index]
 print("-------------------")
-lista= [101,,202,301,405,50,66,772,88,99]
-for index in range(len(lista))
+lista= [101,202,301,405,50,66,772,88,99]
+for index in range(len(lista)):
     print(index, lista[index])
     #pozitioa e index
     #valoarea e lista[index]
@@ -78,3 +78,8 @@ if lista[index] % 2 ==0 and index % 3==0:
 #parcurgere tot pe index, cresterea indexului la finalul fiecarui pas
 print("-------------------")
 lista=[10,20,30,"stop", 40]
+index==0
+while index<len(lista) and lista[index] != "stop" :
+    print(lista[index])
+    index+=1
+print(lista)
